@@ -42,7 +42,14 @@ function browserReload(cb) {
 
 function server() {
   browserSync.init({
-    server: "dist"
+    server: {
+      baseDir: '/',
+      routes: {
+        '/': 'dist',
+        '/assets/js': 'assets/js',
+        '/assets/vendors': 'assets/vendors'
+      }
+    },
   });
 }
 
