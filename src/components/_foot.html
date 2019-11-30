@@ -1,0 +1,6 @@
+  <script src="{{ URL }}/assets/js/app.js"></script>
+  {{ for(index in scripts) {
+    <script src="{{ URL }}` + scripts[index] + `"></script>
+  } }}
+</body>
+</html>
