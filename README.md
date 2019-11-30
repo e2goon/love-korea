@@ -6,7 +6,7 @@
 - SMASS 방법론 지지
 - 코드 규칙을 통일하기 위해 에디터 확장플러그인 editorconfig, prettier 설치 권고
 
-## 프로젝트 기초
+## 프로젝트 구성
 
 - Gulp
   - **File Include** <br>효율적인 웹사이트 운영을 위한 Include 라이브러리
@@ -14,7 +14,7 @@
 - CSS3
   - 에릭마이어의 [reset.css](https://meyerweb.com/eric/tools/css/reset/)
   - 니콜라스의 [normalize.css](https://necolas.github.io/normalize.css/)
-  - cssnext
+  - SASS, LESS 전처리기를 사용하지 않고 미래의 최신 CSS 구문을 사용 [cssnext](https://cssnext.github.io/)
 
 ## 설치방법
 
