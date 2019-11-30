@@ -2,6 +2,7 @@ const { src, dest, watch, parallel, series } = require("gulp");
 const fileInclude = require("gulp-file-include");
 const postcss = require("gulp-postcss");
 const cssnext = require("postcss-cssnext");
+const atImport = require("postcss-import");
 const browserSync = require("browser-sync").create();
 
 function html() {
@@ -21,6 +22,7 @@ function html() {
 
 function css() {
   const plugins = [
+    atImport(),
     cssnext()
   ];
   return src("assets/css/*.css")
