@@ -1,0 +1,73 @@
+
+:root {
+  --horizontalPadding: 20px;
+  --width: 1240px;
+}
+
+.header {
+  height: 900px;
+  background: url(../img/bg-wave.png) no-repeat 50% 100%;
+  & .header-inner {
+    height: 100%;
+  }
+}
+
+.notify {
+  height: inherit;
+  & .notify-item {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 640px;
+    width: var(--width);
+    height: inherit;
+    font-size: 18px;
+    & .notify-tit {
+      position: absolute;
+      top: 208px;
+      left: 640px;
+      font-family: Nanum Myeongjo;
+      font-size: 184px;
+      color: #000;
+    }
+    & .notify-box {
+      position: relative;
+      top: 480px;
+      color: #fff;
+    }
+    & .notify-sub-tit {
+      display: block;
+      font-size: 60px;
+      font-weight: normal;
+    }
+    & img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  & .swiper-pagination {
+    margin-left: calc(var(--width) / -2);
+    display: flex;
+    width: var(--width);
+    height: 136px;
+    left: 50%;
+    bottom: 0;
+  }
+  & .swiper-pagination-bullet {
+    flex: 1;
+    margin: 0 !important;
+    padding: 0 20px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    color: #fff;
+    word-break: keep-all;
+    opacity: 1;
+  }
+  & .swiper-pagination-bullet-active {
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 1);
+  }
+}

@@ -1,14 +1,11 @@
+@import '//fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap';
+@import '//fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap';
+
 @import "base/normalize.css";
 @import "base/reset.css";
-@import "base/fonts.css";
 
 body {
-  font-family: system-ui;
-}
-
-:root {
-  --horizontalPadding: 20px;
-  --width: 1240px;
+  font-family: 'Noto Sans KR', system-ui;
 }
 
 .wrapper {
@@ -18,11 +15,4 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.header {
-  height: 900px;
-  & .header-inner {
-    width: var(--width);
-  }
 }
