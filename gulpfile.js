@@ -33,6 +33,7 @@ function css() {
 function watches() {
   watch("src/**/*.html", { delay: 500 }, series(html, browserReload));
   watch("assets/css/**/*.css", { delay: 500 }, series(css, browserReload));
+  watch("assets/js/*.js", { delay: 500 }, browserReload);
 }
 
 function browserReload(cb) {
@@ -47,6 +48,7 @@ function server() {
       routes: {
         '/': 'dist',
         '/assets/js': 'assets/js',
+        '/assets/img': 'assets/img',
         '/assets/vendors': 'assets/vendors'
       }
     },
