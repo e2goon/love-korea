@@ -1,0 +1,92 @@
+
+:root {
+  --horizontalPadding: 20px;
+  --width: 1240px;
+}
+
+.header {
+  & .header-inner {
+  }
+}
+
+.footer {
+  & .inner {
+    position: relative;
+    margin: 0 auto;
+    width: var(--width);
+  }
+  & .footer-contact {
+    padding: 80px 0 30px        ;
+    & h2 {
+      margin-bottom: 24px;
+      font-family: NanumMyeongjo;
+      font-size: 22px;
+      & span {
+        font-size: 34px;
+        font-weight: bold;
+      }
+    }
+    & p {
+      font-weight: bold;
+    }
+    & .btn {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      padding: 12px 28px;
+      font-size: 24px;
+      font-family: NanumMyeongjo;
+      color: #fff;
+      background-color: #000;
+      line-height: 1;
+      border-radius: 25px;
+    }
+  }
+  & .footer-sitemap {
+    overflow: hidden;
+    padding: 24px 0;
+    border-top: 1px solid #e5e5e5;
+    & h3 a {
+      color: #000;
+    }
+    & a {
+      color: #8d8d8d;
+    }
+    & .sitemap-group {
+      float: left;
+      width: 25%;
+      line-height: 30px;
+    }
+  }
+  & .footer-address {
+    position: relative;
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    color: #8d8d8d;
+    line-height: 24px;
+    & .top {
+      margin-bottom: 12px;
+    }
+    & a {
+      margin: 0 10px;
+      color: #000;
+      font-weight: bold;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    & address {
+      font-style: normal;
+    }
+    & .share {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  & .footer-map {
+    border-top: 1px solid #e5e5e5;
+    height: 400px;
+    background: #fff url(../img/bg-map.jpg) no-repeat 0 0 / cover;
+  }
+}

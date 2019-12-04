@@ -1,0 +1,33 @@
+{{ include("_head.html", {
+  "title": "서브",
+  "styles": [
+    "/assets/css/sub.css"
+  ]
+}) }}
+
+{{ include("skip-nav.html") }}
+
+<div class="wrapper">
+  <nav class="main-menu">
+    <h1><img src="{{ URL }}/assets/img/img-logo.png" alt="ne entertainment"></h1>
+  </nav>
+
+  <header class="header">
+    <div class="header-inner">
+      헤더
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    컨텐츠
+  </main>
+
+  {{ include("footer.html") }}
+
+</div>
+
+{{ include("_foot.html", {
+  "scripts": [
+    "/assets/vendors/swiper/swiper.min.js"
+  ]
+}) }}

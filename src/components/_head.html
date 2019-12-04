@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="{{ URL }}/assets/css/common.css">
   <link rel="stylesheet" href="{{ URL }}/assets/vendors/swiper/swiper.min.css">
 
-  {{ for(index in styles) {
-    <link rel="stylesheet" href="{{ URL }}` + styles[index] + `">
+  {{ if (styles) {
+    {{ for(index in styles) {
+      <link rel="stylesheet" href="{{ URL }}` + styles[index] + `">
+    } }}
   } }}
 </head>
 <body>

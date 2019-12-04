@@ -53,6 +53,7 @@ function server() {
         '/assets/vendors': 'assets/vendors'
       }
     },
+    tunnel: true,
   });
 }
 
