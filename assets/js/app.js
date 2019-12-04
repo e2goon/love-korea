@@ -1,6 +1,5 @@
 
 var swiperMain = new Swiper('.notify', {
-  speed: 600,
   pagination: {
     el: '.notify .swiper-pagination',
     clickable: true,
