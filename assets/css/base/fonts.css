@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-weight: 200;
+  src: url('../fonts/NotoSansCJKkr-Light.woff'),
+       url('../fonts/NotoSansCJKkr-Light.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-weight: normal;
+  src: url('../fonts/NotoSansCJKkr-DemiLight.woff'),
+       url('../fonts/NotoSansCJKkr-DemiLight.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-weight: bold;
+  src: url('../fonts/NotoSansCJKkr-Medium.woff').
+       url('../fonts/NotoSansCJKkr-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: normal;
+  src: url('../fonts/NanumMyeongjo.woff'),
+       url('../fonts/NanumMyeongjo.woff2');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-weight: bold;
+  src: url('../fonts/NanumMyeongjoBold.woff'),
+       url('../fonts/NanumMyeongjoBold.woff2');
+}

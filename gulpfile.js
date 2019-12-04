@@ -47,6 +47,7 @@ function server() {
       baseDir: '/',
       routes: {
         '/': 'dist',
+        '/assets/fonts': 'assets/fonts',
         '/assets/js': 'assets/js',
         '/assets/img': 'assets/img',
         '/assets/vendors': 'assets/vendors'
