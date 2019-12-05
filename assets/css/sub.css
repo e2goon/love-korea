@@ -1,8 +1,4 @@
-
-:root {
-  --horizontalPadding: 20px;
-  --width: 1240px;
-}
+@import "abstract/variables.css";
 
 .header {
   & .header-inner {

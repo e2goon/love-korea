@@ -1,19 +1,15 @@
-
-:root {
-  --horizontalPadding: 20px;
-  --width: 1240px;
-}
-
-.header {
-  height: 900px;
-  background: url(../img/bg-wave.png) no-repeat 50% 100%;
-  & .header-inner {
-    height: 100%;
-  }
-}
+@import "abstract/variables.css";
 
 .notify {
-  height: inherit;
+  min-height: 900px;
+  background: url(../img/bg-wave.png) no-repeat 50% 220px / cover;
+  padding-top: calc(100% * (641 / 1903));
+  & .swiper-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
   & .notify-item {
     position: relative;
     margin: 0 auto;
@@ -80,84 +76,115 @@
   }
 }
 
-.footer {
-  & .inner {
-    position: relative;
+.press {
+  padding: 80px 0;
+  & .press-header {
+    border-bottom: 1px solid #e5e5e5;
+    & .press-header-inner {
+      display: table;
+      margin: 0 auto;
+      width: var(--width);
+      & .press-title {
+        display: table-cell;
+        padding: 12px 0;
+        padding-right: 100px;
+        width: 1%;
+        font-family: NanumMyeongjo;
+        font-weight: normal;
+        font-size: 40px;
+        white-space: nowrap;
+        line-height: 1;
+      }
+      & .press-tab {
+        display: table-cell;
+        font-size: 18px;
+        vertical-align: bottom;
+        & .press-list {
+          display: table;
+          width: 100%;
+          & li {
+            display: table-cell;
+            text-align: center;
+          }
+          & a {
+            position: relative;
+            display: inline-block;
+            padding: 20px 0;
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            font-weight: bold;
+            bottom: -1px;
+            &.is-active {
+              color: rgba(0, 0, 0, 1);
+              border-bottom: 2px solid #000;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .press-content {
     margin: 0 auto;
     width: var(--width);
-  }
-  & .footer-contact {
-    padding: 80px 0 30px        ;
-    & h2 {
-      margin-bottom: 24px;
-      font-family: NanumMyeongjo;
-      font-size: 22px;
-      & span {
-        font-size: 34px;
-        font-weight: bold;
+    & .press-main {
+      display: table;
+      padding: 40px 0;
+      & .press-main-img {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      & .press-main-text {
+        display: table-cell;
+        padding: 0 66px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+        & h3 {
+          font-size: 30px;
+          font-family: NanumMyeongjo;
+          font-weight: bold;
+        }
+        & p {
+          margin: 20px 0;
+        }
       }
     }
-    & p {
-      font-weight: bold;
-    }
-    & .btn {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      padding: 12px 28px;
-      font-size: 24px;
+    & .press-list {
+      font-size: 16px;
       font-family: NanumMyeongjo;
-      color: #fff;
-      background-color: #000;
-      line-height: 1;
-      border-radius: 25px;
-    }
-  }
-  & .footer-sitemap {
-    overflow: hidden;
-    padding: 24px 0;
-    border-top: 1px solid #e5e5e5;
-    & h3 a {
-      color: #000;
-    }
-    & a {
-      color: #8d8d8d;
-    }
-    & .sitemap-group {
-      float: left;
-      width: 25%;
-      line-height: 30px;
-    }
-  }
-  & .footer-address {
-    position: relative;
-    padding: 30px 0;
-    border-top: 1px solid #e5e5e5;
-    color: #8d8d8d;
-    line-height: 24px;
-    & .top {
-      margin-bottom: 12px;
-    }
-    & a {
-      margin: 0 10px;
-      color: #000;
-      font-weight: bold;
-      &:first-child {
-        margin-left: 0;
+      & li {
+        border-bottom: 1px solid #dbdbdb;
+        &:first-child {
+          border-top: 1px solid #dbdbdb;
+        }
+      }
+      & a {
+        display: table;
+        width: 100%;
+        color: #000;
+        &:hover,
+        &:focus {
+          background-color: #fafafa;
+        }
+        & span {
+          display: table-cell;
+          vertical-align: middle;
+          &:first-child {
+            width: 1%;
+            padding-right: 30px;
+            & img {
+              vertical-align: top;
+            }
+          }
+          &:last-child {
+            width: 1%;
+            padding: 0 30px;
+            font-style: italic;
+            white-space: nowrap;
+          }
+        }
       }
     }
-    & address {
-      font-style: normal;
-    }
-    & .share {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
-  & .footer-map {
-    border-top: 1px solid #e5e5e5;
-    height: 400px;
-    background: #fff url(../img/bg-map.jpg) no-repeat 0 0 / cover;
   }
 }
