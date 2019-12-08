@@ -4,7 +4,7 @@
 @import "abstract/variables.css";
 
 body {
-  font-family: 'NotoSansCJK', system-ui;
+  font-family: "NotoSansCJK", system-ui;
 }
 
 a {
@@ -29,29 +29,29 @@ br {
   font-size: 17px;
   z-index: 2;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(20px);
     opacity: 0;
     z-index: -1;
-    transition: opacity .4s;
+    transition: opacity 0.4s;
   }
   & .main-menu-title {
     display: inline-block;
     width: 227px;
-    transition: width .4s;
+    transition: width 0.4s;
     & img {
       width: 100%;
     }
   }
   &.is-active {
     padding: 10px 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     & .main-menu-title {
       width: 190px;
     }
@@ -77,7 +77,7 @@ br {
       position: relative;
       color: #000;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -4px;
         left: -14px;
@@ -86,7 +86,7 @@ br {
         border-radius: 50%;
         background-color: #ddd;
         opacity: 0;
-        transition: opacity .2s;
+        transition: opacity 0.2s;
       }
       &:hover::before {
         opacity: 1;
@@ -106,7 +106,7 @@ br {
     width: var(--width);
   }
   & .footer-contact {
-    padding: 80px 0 30px        ;
+    padding: 80px 0 30px;
     & h2 {
       margin-bottom: 24px;
       font-family: NanumMyeongjo;

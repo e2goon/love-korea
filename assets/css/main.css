@@ -201,7 +201,7 @@
       font-family: NanumMyeongjo;
       color: #fff;
       &::before {
-        content: '';
+        content: "";
         display: block;
         margin: 0 auto 18px;
         width: 36px;
@@ -350,4 +350,62 @@
 
 .live {
   background-color: #ebebeb;
+  & .live-item {
+    display: table;
+    margin: 0 auto;
+    width: var(--width);
+  }
+  & .live-content {
+    position: relative;
+    display: table-cell;
+    padding: 50px 0;
+    height: 500px;
+    padding-left: 640px;
+    text-align: center;
+    vertical-align: middle;
+    & img {
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+    & strong {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-family: NanumMyeongjo;
+    }
+    & p {
+      margin-bottom: 34px;
+    }
+    & a {
+      font-size: 21px;
+      font-family: NanumMyeongjo;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+}
+
+/*Edge*/
+@supports (-ms-accelerator: true) {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+  body {
+    overflow: auto;
+    height: 100%;
+  }
+}
+/*Ie 10/11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+  body {
+    overflow: auto;
+    height: 100%;
+  }
 }
