@@ -1,5 +1,9 @@
 
 :root {
+  /* pc */
   --horizontalPadding: 20px;
   --width: 1240px;
+  /* mobile */
+  --mPadding: 20px;
+  --mWidth: 100%;
 }

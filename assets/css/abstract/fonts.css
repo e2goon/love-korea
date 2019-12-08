@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'NotoSansCJK';
   font-weight: bold;
-  src: url('../fonts/NotoSansCJKkr-Medium.woff').
+  src: url('../fonts/NotoSansCJKkr-Medium.woff'),
        url('../fonts/NotoSansCJKkr-Medium.woff2');
 }
 

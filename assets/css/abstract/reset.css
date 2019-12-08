@@ -108,7 +108,8 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.25;
+  letter-spacing:-0.5px;
 }
 
 ol,

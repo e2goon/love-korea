@@ -1,0 +1,43 @@
+@import "abstract/normalize.css";
+@import "abstract/reset.css";
+@import "abstract/fonts.css";
+@import "abstract/variables.css";
+
+
+@media (max-width:768px) {
+  img{
+    width:100%;
+    height:auto;
+  }
+  .wrapper{
+    min-width:320px;
+  }
+  /* 임시 hide */
+  .main-menu{
+    display:none;
+  }
+  .header{
+    display:none;
+  }
+  #main{
+    display:none;
+  }
+  .footer{
+    & .inner{
+      width:var(--mWidth);
+      padding:0;
+    }
+    & .footer-contact{
+      padding:30px var(--mPadding);
+      & h2 {
+        /* font-size:12px; */
+      }
+      & .btn {
+        position:static;
+        top:0;
+        right:0;
+        /* font-size:12px; */
+      }
+    }
+  }
+}
