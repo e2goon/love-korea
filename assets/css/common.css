@@ -50,9 +50,13 @@ br {
     }
   }
   &.is-active {
-    padding: 15px 60px;
+    padding: 10px 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     & .main-menu-title {
       width: 190px;
+    }
+    & .main-menu-list {
+      top: 50px;
     }
     &::before {
       opacity: 1;

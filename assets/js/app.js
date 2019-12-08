@@ -13,6 +13,10 @@
     }
   });
 
+  var liveGallery = new Swiper('.live .swiper-container', {
+    loop: true
+  });
+
   function mainMenu() {
     var menu = document.querySelector('.main-menu');
     window.addEventListener('scroll', function() {
