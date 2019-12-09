@@ -1,0 +1,195 @@
+{{ include("_head.html", {
+  "title": "홈",
+  "styles": [
+    "/assets/css/main.css",
+    "/assets/css/breakpoint_main.css"
+  ]
+}) }}
+
+{{ include("skip-nav.html") }}
+
+<div class="wrapper">
+
+  {{ include("main-menu.html") }}
+
+  <header class="header">
+    <div class="header-inner">
+
+      <div class="swiper-container notify">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="notify-item" data-bullet-name="한국모델선발대회">
+              <img src="{{ URL }}/assets/img/@temp.png" alt="" style="margin: 0 0 0 -65px;">
+              <h2 class="notify-tit">한복</h2>
+              <div class="notify-box">
+                <strong class="notify-sub-tit">한복모델선발대회</strong>
+                <span>“한국적인 것”이라는 것이 한복에만 한정되지 않고,<br>전 세계인들이 함께 향유하고 즐길 수 있는 보편적인 문화가<br>되었으면 합니다.</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="notify-item" data-bullet-name="미스&미시즈 웨딩 드레스모델 선발대회">
+              <img src="{{ URL }}/assets/img/@temp.png" alt="">
+              <h2 class="notify-tit">한국</h2>
+              <div class="notify-box">
+                <strong class="notify-sub-tit">한복모델선발대회</strong>
+                <span>“한국적인 것”이라는 것이 한복에만 한정되지 않고, <br> 전 세계인들이 함께 향유하고 즐길 수 있는 보편적인 문화가 <br> 되었으면 합니다.</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="notify-item" data-bullet-name="NE 엔터테인먼트">
+              <img src="{{ URL }}/assets/img/@temp.png" alt="">
+              <h2 class="notify-tit">한국</h2>
+              <div class="notify-box">
+                <strong class="notify-sub-tit">한복모델선발대회</strong>
+                <span>“한국적인 것”이라는 것이 한복에만 한정되지 않고, <br> 전 세계인들이 함께 향유하고 즐길 수 있는 보편적인 문화가 <br> 되었으면 합니다.</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="notify-item" data-bullet-name="NE 엔터테인먼트">
+              <img src="{{ URL }}/assets/img/@temp.png" alt="">
+              <h2 class="notify-tit">한국</h2>
+              <div class="notify-box">
+                <strong class="notify-sub-tit">한복모델선발대회</strong>
+                <span>“한국적인 것”이라는 것이 한복에만 한정되지 않고, <br> 전 세계인들이 함께 향유하고 즐길 수 있는 보편적인 문화가 <br> 되었으면 합니다.</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="notify-item" data-bullet-name="NE 엔터테인먼트">
+              <img src="{{ URL }}/assets/img/@temp.png" alt="">
+              <h2 class="notify-tit">한국</h2>
+              <div class="notify-box">
+                <strong class="notify-sub-tit">한복모델선발대회</strong>
+                <span>“한국적인 것”이라는 것이 한복에만 한정되지 않고, <br> 전 세계인들이 함께 향유하고 즐길 수 있는 보편적인 문화가 <br> 되었으면 합니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="press">
+      <header class="press-header">
+        <div class="press-header-inner">
+          <h2 class="press-title">보도자료</h2>
+          <div class="press-tab">
+            <ul class="press-list">
+              <li><a href="#" class="is-active">사랑해요 대한민국</a></li>
+              <li><a href="#">한복모델 선발대회</a></li>
+              <li><a href="#">NE 엔터테인먼트</a></li>
+              <li><a href="#">사랑해요대한민국 시니어모델 협회</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="press-content">
+        <div class="press-main">
+          <span class="press-main-img">
+            <img src="https://fakeimg.pl/560x200/">
+          </span>
+          <div class="press-main-text">
+            <h3>WSTMS 공로상 수상한 '사랑해요 ...</h3>
+            <p>비아이알스포츠(BIR스포츠)가 주최한 '2019 월드스포츠탑모델쇼 시즌4'(WSTMS시즌4)가 지난 28일 서울시 성수동에 위치한 '보테가마지오 라포레스타홀'에서 성료했다. 이번 무대는 ‘패션과 멋'이라는 주제로 진행됐다. 런웨이와 함께 퍼포먼스를 결합한 스포츠패션쇼와 비키니 및 머슬퍼포먼스 등이 실시됐다.<br><br>런웨이 무대에는 WSTMS 4기 탑모델 25명이 기능성 스포츠의류, 요가복, 정장, 이브닝드레스 등의 의상을 입고 올라 눈길을 끌었다.</p>
+          </div>
+        </div>
+        <ul class="press-list">
+          {{ for(i in [1, 2, 3, 4]) {
+          <li>
+            <a href="#">
+              <span class="">
+                <img src="https://fakeimg.pl/70x70/">
+              </span>
+              <span class="subject">`+ i +` 사랑해요대한미국 한복패션쇼, "한복, 광화문 광장에서 한식과 만나다"</span>
+              <span>2019. 2. 12</span>
+            </a>
+          </li>
+          } }}
+        </ul>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="video-bg">
+        <a href="#" class="video-play">play</a>
+      </div>
+      <div class="video-section">
+        <h2 class="video-title"><sup>MOVIE</sup> 「나의 알바인생」영화소개</h2>
+        <p class="video-text">어릴 적 부모님을 잃고 서로 의지하며 살아가던 자매는 학자금대출이자와 최저생활비를 벌기 위해 두 개 이상의 알바를 뛰고 있다. 사회복지사로 요양원에서 근무하며 밤에는 호프집 알바를, 평일엔 편의점 주말엔 고기집 알바를 뛰는 두 자매의 이야기를 통해 하루도 쉬지 못하고 매일 힘겨운 날들을 보내고 있지만 부당한 대우와 인격모독을 기본으로 악질적 성희롱까지 현재 청년들의 고단한 삶을 비추고 있다.</p>
+        <img src="{{ URL }}/assets/img/img-video.png" alt="" class="video-img">
+        <a href="#" class="more">more</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-inner">
+        <div class="about-group">
+          <h2><sup>Senior Model Society</sup> 시니어 모델 협회</h2>
+          <img src="{{ URL }}/assets/img/img-about01.jpg" alt="">
+          <p>시니어는 지는 해가 아니라 떠오르는 해로써 맞는 두 번째 스무살입니다. 사랑해요대한민국 시니어모델 협회는 시니어모델들의 활약을 통해 시니어에 대한 인식 전환을 유도하기 위해 출범했습니다. 사랑해요대한민국 시니어모델 조직위원들의 시니어모델로서의 축적된 경력과 노하우를 바탕으로 만든 체계적인 지원과 관리를 통해 시니어모델로서 당신의 두 번째 스무살의 전성기를 꽃피우세요.</p>
+          <a href="#" class="more">more</a>
+        </div>
+        <div class="about-group is-reverse">
+          <h2><sup>Performance planning</sup> 대규모 공연 기획</h2>
+          <img src="{{ URL }}/assets/img/img-about02.jpg" alt="">
+          <p>비아이알스포츠(BIR스포츠)가 주최한 '2019 월드스포츠탑모델쇼 시즌4'(WSTMS시즌4)가 지난 28일 서울시 성수동에 위치한 '보테가마지오 라포레스타홀'에서 성료했다.<br><br>이번 무대는 ‘패션과 멋'이라는 주제로 진행됐다. 런웨이와 함께 퍼포먼스를 결합한 스포츠패션쇼와 비키니 및 머슬퍼포먼스 등이 실시됐다. 런웨이 무대에는 WSTMS 4기 탑모델 25명이 기능성 스포츠의류, 요가복, 정장, 이브닝드레스 등의 의상을 입고 올라 눈길을 끌었다.</p>
+          <a href="#" class="more">more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply">
+      <div class="apply-inner">
+        <div class="apply-group">
+          <h2><sup>NE 엔터테인먼트</sup> 공개 오디션 신청</h2>
+          <img src="{{ URL }}/assets/img/img-apply01.png" alt="">
+          <p>상시 진행되는 오디션으로 재능있는<br>분들의 많은 지원 바랍니다.</p>
+          <a href="#" class="more">more</a>
+        </div>
+        <div class="apply-group">
+          <h2><sup>사랑해요대한민국</sup> 한복모델선발대회신청</h2>
+          <img src="{{ URL }}/assets/img/img-apply02.png" alt="">
+          <p>가장 한국적인 것이 가장 세계적인 것이다.<br>이것이 「사랑해요 대한민국」이 꾸준히 추구해온..</p>
+          <a href="#" class="more">more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="live">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="live-item">
+              <div class="live-content">
+                <img src="https://fakeimg.pl/600x400/">
+                <strong>제10회 사랑해요대한민국 한국인의밤<br>한복모델선발대회</strong>
+                <p>일제의 통치속에서도 민족의 정신을 살린것은 백의민족의 상징인 한복입니다. 광복의 기쁨을 가장 먼저 맞이하게 된 것이 백의 저고리를 여미고 대한독립만세를 외치던 선조들의 기상을 받아 지금의 대한민국...</p>
+                <a href="#" class="more">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
+
+  {{ include("footer.html") }}
+
+</div>
+
+{{ include("_foot.html", {
+  "scripts": [
+    "/assets/vendors/swiper/swiper.min.js"
+  ]
+}) }}
