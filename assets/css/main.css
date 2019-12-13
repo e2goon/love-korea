@@ -13,7 +13,7 @@
   & .notify-item {
     position: relative;
     margin: 0 auto;
-    padding:0 20px 0 706px;
+    padding: 0 0 0 660px;
     width: var(--width);
     height: inherit;
     font-size: 19px;
@@ -24,11 +24,12 @@
     }
     & .notify-tit {
       position: absolute;
-      top: 208px;
+      top: 186px;
       left: 684px;
       font-family: NanumMyeongjo;
       font-size: 184px;
       color: #000;
+      font-weight: normal;
     }
     & .notify-box {
       position: relative;
@@ -38,7 +39,7 @@
         display: inline-block;
         margin-bottom: 30px;
         padding-bottom: 8px;
-        font-size: 60px;
+        font-size: 53px;
         font-weight: 200;
         border-bottom: 1px solid #fff;
         line-height: 1;
@@ -96,6 +97,93 @@
     right: 50%;
     margin-right: -884px;
     background: url(../img/btn-visual-next.png) no-repeat 100% 50%;
+  }
+  & .notify-01 {
+    & .notify-item {
+      & img {
+        left: -67px;
+      }
+    }
+    & .notify-tit {
+      top: 190px;
+      left: 644px;
+      font-size: 184px;
+    }
+    & .notify-box {
+      & .notify-sub-tit {
+        font-size: 35px;
+      }
+    }
+  }
+  & .notify-02 {
+    & .notify-item {
+      & img {
+        left: 120px;
+      }
+    }
+    & .notify-tit {
+      top: 152px;
+      left: 645px;
+      font-size: 130px;
+      line-height: 1;
+      letter-spacing: -6px;
+    }
+    & .notify-box {
+      & .notify-sub-tit {
+        font-size: 35px;
+      }
+    }
+  }
+  & .notify-03 {
+    & .notify-item {
+      & img {
+        left: 130px;
+      }
+    }
+    & .notify-tit {
+      top: 182px;
+      left: 655px;
+      font-size: 195px;
+    }
+    & .notify-box {
+      & .notify-sub-tit {
+        font-size: 53px;
+      }
+    }
+  }
+  & .notify-04 {
+    & .notify-item {
+      & img {
+        left: 148px;
+      }
+    }
+    & .notify-tit {
+      top: 230px;
+      left: 634px;
+      font-size: 136px;
+    }
+    & .notify-box {
+      & .notify-sub-tit {
+        font-size: 53px;
+      }
+    }
+  }
+  & .notify-05 {
+    & .notify-item {
+      & img {
+        left: 130px;
+      }
+    }
+    & .notify-tit {
+      top: 230px;
+      left: 634px;
+      font-size: 136px;
+    }
+    & .notify-box {
+      & .notify-sub-tit {
+        font-size: 53px;
+      }
+    }
   }
 }
 

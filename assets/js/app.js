@@ -8,11 +8,11 @@
       el: '.notify .swiper-pagination',
       clickable: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.notify .swiper-button-next',
+        prevEl: '.notify .swiper-button-prev',
       },
       renderBullet: function (index, className) {
-        var notifyItem = this.slides[index].querySelector('.notify-item');
+        var notifyItem = this.slides[index + 1].querySelector('.notify-item');
         return '<button type="button" class="' + className + '">' + notifyItem.dataset.bulletName + '</button>';
       },
     }
