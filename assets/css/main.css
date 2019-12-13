@@ -412,6 +412,26 @@
       line-height:28px;
     }
   }
+  & .swiper-button-prev:after,
+  & .swiper-button-next:after {
+    display:none;
+  }
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    width:50px;
+    height:120px;
+  }
+  & .swiper-button-prev {
+    right: auto;
+    left:50%;
+    margin-left: -884px;
+    background: url(../img/btn-live-prev.png) no-repeat 0 50%;
+  }
+  & .swiper-button-next {
+    right: 50%;
+    margin-right: -884px;
+    background: url(../img/btn-live-next.png) no-repeat 100% 50%;
+  }
 }
 
 /* button */

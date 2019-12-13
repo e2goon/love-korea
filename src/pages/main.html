@@ -120,7 +120,7 @@
 
     <section class="video">
       <div class="video-bg">
-        <a href="#" class="video-play">play</a>
+        <a href="#" data-modal-id="videoModal" class="video-play">play</a>
       </div>
       <div class="video-section">
         <h2 class="video-title"><sup>MOVIE</sup> 「나의 알바인생」영화소개</h2>
@@ -183,10 +183,24 @@
       </div>
     </section>
   </main>
-
+  
   {{ include("footer.html") }}
-
+  
 </div>
+
+<!-- modal -->
+<div id="videoModal" class="modal-popup">
+  <div class="modal-wrap">
+      <div class="modal-container">
+        <!-- js : video -->
+        <div class="video"></div>
+      </div>
+      <!-- //inner content -->
+      <button type="button" class="modal-close" onClick="layerClose('videoModal')"><span>레이어팝업 닫기</span></button>
+  </div>
+<div class="dim"></div>
+<!-- //modal -->
+
 
 {{ include("_foot.html", {
   "scripts": [

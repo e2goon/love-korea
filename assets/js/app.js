@@ -3,9 +3,14 @@
 
   var swiperMain = new Swiper('.notify', {
     loop: true,
+    // effect: 'fade',
     pagination: {
       el: '.notify .swiper-pagination',
       clickable: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       renderBullet: function (index, className) {
         var notifyItem = this.slides[index].querySelector('.notify-item');
         return '<button type="button" class="' + className + '">' + notifyItem.dataset.bulletName + '</button>';
@@ -14,7 +19,11 @@
   });
 
   var liveGallery = new Swiper('.live .swiper-container', {
-    loop: true
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
   function mainMenu() {
@@ -31,4 +40,52 @@
   window.addEventListener('DOMContentLoaded', function() {
     mainMenu();
   })
+
+  // modal
+  $('.video-play').on('click', function(e){
+    var modalId = this.dataset.modalId
+    layerOpen(modalId)
+    e.preventDefault()
+  })
 } ());
+
+
+/**
+ * modal
+ */
+function layerOpen(obj) {
+  var $obj = $('#' + obj),
+      $fg = $obj.find('.modal-wrap'),
+      $dim = $('.dim'),
+      speed = 300,
+      w = $(window).width();
+  
+  $obj.fadeIn(speed);
+  $dim.css('filter', 'alpha(opacity=70)').fadeIn(speed);
+
+  // MEMO: video iframe 추가
+  if(obj === 'videoModal') {
+    // append iframe
+    console.log('video')
+  }
+
+  // 팝업 정렬
+  $fg.css({
+      'margin-top': '-' + ($fg.outerHeight() / 2) + 'px',
+      'margin-left': '-' + ($fg.outerWidth() / 2) + 'px'
+  });
+}
+
+/**
+* [modal-popup : 모달팝업 닫기]
+* @param  {[object]}
+*/
+function layerClose(obj){
+  var $obj = $('#' + obj),
+      $dim = $('.dim'),
+      speed = 300;
+  
+  $obj.fadeOut(speed);
+  $dim.fadeOut(speed);
+}
+
