@@ -28,13 +28,24 @@
 
   function mainMenu() {
     var menu = document.querySelector('.main-menu');
+    var links = menu.querySelectorAll('a');
     window.addEventListener('scroll', function() {
       if (this.scrollY < 50) {
-        menu.classList.remove('is-active');
+        menu.classList.remove('is-fixed');
       } else {
-        menu.classList.add('is-active');
+        menu.classList.add('is-fixed');
       }
     });
+    links.forEach(function(link, index) {
+      link.addEventListener('focusin', function() {
+        menu.classList.add('is-open');
+      });
+      if (index == links.length - 1) {
+        link.addEventListener('focusout', function() {
+          menu.classList.remove('is-open');
+        });
+      }
+    })
   }
 
   window.addEventListener('DOMContentLoaded', function() {
