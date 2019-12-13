@@ -1,45 +1,66 @@
 @import "abstract/variables.css";
 
+@media (max-width: 768px) {
+  .is-desktop {
+    display: none;
+  }
+  .is-mobile {
+    display: block;
+  }
 
-@media (max-width:768px) {
-  img{
-    width:100%;
-    height:auto;
+  .main-menu {
+    padding: 0;
   }
-  .wrapper{
-    min-width:320px;
+
+  img {
+    width: 100%;
+    height: auto;
   }
-  /* 임시 hide */
-  .main-menu{
-    display:none;
+  .wrapper {
+    min-width: 320px;
   }
-  .header{
-    display:none;
+  .header {
+    display: none;
   }
-  #main{
-    display:none;
+  #main {
+    display: none;
   }
-  .footer{
-    & .inner{
-      width:var(--mWidth);
-      padding:0;
+  .footer {
+    & .inner {
+      width: var(--mWidth);
+      padding: 0;
     }
-    & .footer-contact{
-      padding:30px var(--mPadding);
+    & .footer-contact {
+      padding: 30px var(--mPadding);
       & h2 {
         /* font-size:12px; */
       }
       & .btn {
-        position:static;
-        top:0;
-        right:0;
+        position: static;
+        top: 0;
+        right: 0;
         /* font-size:12px; */
       }
     }
   }
   /* modal */
-  .modal-popup{min-width:inherit;min-height:inherit;left:0;margin:0;}
-  .modal-popup .modal-wrap{top:50%;left:0;width:100%;margin-top:-30% !important;margin-left:0 !important;}
-  .modal-popup .modal-container{}
-  .modal-popup .modal-wrap .modal-close{top:-31px;right:10px;}
+  .modal-popup {
+    min-width: inherit;
+    min-height: inherit;
+    left: 0;
+    margin: 0;
+    & .modal-wrap {
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -30% !important;
+      margin-left: 0 !important;
+    }
+    & .modal-container {
+    }
+    & .modal-wrap .modal-close {
+      top: -31px;
+      right: 10px;
+    }
+  }
 }
