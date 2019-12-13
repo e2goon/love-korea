@@ -2,7 +2,8 @@
   "name": "love-korea",
   "version": "0.0.1",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "author": "e2goon",
   "license": "MIT",
@@ -10,9 +11,11 @@
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.1.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-prettier": "^2.3.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1"
   }
