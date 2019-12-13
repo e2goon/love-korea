@@ -69,8 +69,8 @@ function prodCSS() {
 }
 
 function watches() {
-  watch("src/**/*.html", { delay: 500 }, series(html, browserReload));
-  watch("assets/css/**/*.css", { delay: 500 }, series(css, browserReload));
+  watch("src/**/*.html", { delay: 500 }, series(devHTML, browserReload));
+  watch("assets/css/**/*.css", { delay: 500 }, series(devCSS, browserReload));
   watch("assets/js/*.js", { delay: 500 }, browserReload);
 }
 
