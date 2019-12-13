@@ -52,8 +52,7 @@ function server() {
         '/assets/img': 'assets/img',
         '/assets/vendors': 'assets/vendors'
       }
-    },
-    tunnel: true,
+    }
   });
 }
 
