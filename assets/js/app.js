@@ -7,15 +7,15 @@
     pagination: {
       el: '.notify .swiper-pagination',
       clickable: true,
-      navigation: {
-        nextEl: '.notify .swiper-button-next',
-        prevEl: '.notify .swiper-button-prev',
-      },
       renderBullet: function (index, className) {
         var notifyItem = this.slides[index + 1].querySelector('.notify-item');
         return '<button type="button" class="' + className + '">' + notifyItem.dataset.bulletName + '</button>';
       },
-    }
+    },
+    navigation: {
+      nextEl: '.notify .swiper-button-next',
+      prevEl: '.notify .swiper-button-prev',
+    },
   });
 
   var liveGallery = new Swiper('.live .swiper-container', {
