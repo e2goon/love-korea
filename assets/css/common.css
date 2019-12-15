@@ -168,7 +168,6 @@ br {
       }
     }
   }
-  &:hover,
   &.is-fixed {
     max-height: 120px;
     padding: 10px 60px;
@@ -189,8 +188,7 @@ br {
       opacity: 1;
     }
   }
-  &.is-open,
-  &:hover {
+  &.is-open {
     max-height: 600px;
     background-color: #fff;
     & .main-menu-sub {
