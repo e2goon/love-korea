@@ -64,7 +64,7 @@ br {
     display: inline-block;
     width: 227px;
     height: 118px;
-    transition: width 0.4s ease;
+    /* transition: width 0.4s ease; */
     & a {
       display: block;
       text-indent: -9999px;
@@ -174,8 +174,8 @@ br {
     border-bottom: 1px solid #c4c4c4;
     & .main-menu-title {
       display: block;
-      width: 194px;
-      height: 67px;
+      width: 200px;
+      height: 70px;
       margin: 20px 0;
       & a {
         background-image: url(../img/img-logo-sticky.png);
@@ -191,6 +191,15 @@ br {
   &.is-open {
     max-height: 600px;
     background-color: #fff;
+    & .main-menu-title {
+      display: block;
+      width: 200px;
+      height: 70px;
+      margin: 20px 0;
+      & a {
+        background-image: url(../img/img-logo-sticky.png);
+      }
+    }
     & .main-menu-sub {
       transform: translateY(0);
       opacity: 1;
@@ -242,6 +251,9 @@ br {
   }
   & .footer-sitemap {
     overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
     padding: 24px 0;
     border-top: 1px solid #e5e5e5;
     & h3 a {
@@ -251,8 +263,6 @@ br {
       color: #8d8d8d;
     }
     & .sitemap-group {
-      float: left;
-      /* width: 25%; */
       margin-right: 207px;
       line-height: 30px;
       &:last-child {
@@ -320,6 +330,10 @@ br {
     border-top: 1px solid #e5e5e5;
     height: 400px;
     background: #fff url(../img/bg-map.jpg) no-repeat 50% 0 / cover;
+    & > p{
+      overflow:hidden;
+      text-indent:-9999px;
+    }
     & .box {
       position: absolute;
       left: 50%;
@@ -354,7 +368,7 @@ br {
   top: 0;
   left: 50%;
   width: 100%;
-  min-width: 1020px;
+  min-width: 1080px;
   min-height: 680px;
   height: 100%;
   min-height: 768px;
@@ -365,19 +379,19 @@ br {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1020px;
 }
 .modal-popup .modal-wrap .modal-close {
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -58px;
   overflow: hidden;
   display: block;
-  width: 68px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
   text-indent: -9999px;
-  background: url(/img/btn_close.png) no-repeat 0 50%;
+  border:none;
+  background: url(../img/btn_close.png) no-repeat 0 50%;
 }
 .dim {
   display: none;

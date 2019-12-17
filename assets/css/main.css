@@ -1,9 +1,11 @@
 @import "abstract/variables.css";
 
 .notify {
+  max-width:1920px;
   min-height: 900px;
-  background: url(../img/bg-wave.png) no-repeat 50% 220px / cover;
-  padding-top: calc(100% * (641 / 1903));
+  margin:0 auto;
+  /* padding-top: calc(100% * (641 / 1903)); */
+  background: url(../img/bg-wave.png) no-repeat 50% 220px;
   & .swiper-wrapper {
     position: absolute;
     left: 0px;
@@ -533,6 +535,21 @@
   font-weight: bold;
   line-height:1;
   color: #000;
+}
+
+/* modal */
+.modal-popup {
+  & .video {
+    width:1200px;
+    height:672px;
+    & iframe {
+      width:100%;
+      height:100%;
+    }
+  }
+  & .modal-close{
+    border:none;
+  }
 }
 
 /*Edge*/

@@ -109,7 +109,7 @@ section {
 
 body {
   line-height: 1.25;
-  letter-spacing:-0.5px;
+  letter-spacing: -0.5px;
 }
 
 ol,
@@ -135,6 +135,10 @@ table {
   border-spacing: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 *,
 *::before,
 *::after {
@@ -144,3 +148,4 @@ table {
 html {
   -webkit-text-size-adjust: 100%;
 }
+

@@ -1,9 +1,11 @@
 
 (function() {
 
+  // main visual
   var swiperMain = new Swiper('.notify', {
     loop: true,
-    // effect: 'fade',
+    effect: 'fade',
+    speed: 1000,
     pagination: {
       el: '.notify .swiper-pagination',
       clickable: true,
@@ -95,11 +97,12 @@ function layerOpen(obj) {
       w = $(window).width();
   
   $obj.fadeIn(speed);
-  $dim.css('filter', 'alpha(opacity=70)').fadeIn(speed);
+  $dim.fadeIn(speed);
 
   // MEMO: video iframe 추가
   if(obj === 'videoModal') {
     // append iframe
+    $obj.find('.video').append('<iframe width="100%" src="https://www.youtube.com/embed/9v6oBBsW3gA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
     console.log('video')
   }
 
@@ -121,5 +124,12 @@ function layerClose(obj){
   
   $obj.fadeOut(speed);
   $dim.fadeOut(speed);
+  if(obj === 'videoModal') {
+    // append iframe
+    setTimeout(function(){
+      $obj.find('.video').empty()
+    }, speed)
+    console.log('video')
+  }
 }
 
