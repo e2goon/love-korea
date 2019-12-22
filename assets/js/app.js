@@ -5,7 +5,7 @@
   var swiperMain = new Swiper('.notify', {
     loop: true,
     effect: 'fade',
-    speed: 1000,
+    speed: 1500,
     pagination: {
       el: '.notify .swiper-pagination',
       clickable: true,
@@ -17,8 +17,15 @@
     navigation: {
       nextEl: '.notify .swiper-button-next',
       prevEl: '.notify .swiper-button-prev',
-    },
+    }
   });
+  // swiperMain.on('init', function() { /* do something */ });
+  // swiperMain.init()
+  // swiperMain.on('slideChange', function () {
+  //   var total = this.el.childElementCount + 1
+  //   var idx = this.realIndex + 1 === total ? 0 : this.realIndex + 1
+  //   console.log(this)
+  // })
 
   var liveGallery = new Swiper('.live .swiper-container', {
     loop: true,
@@ -28,17 +35,22 @@
     },
   });
 
+  // Gnb:: desktop
   function desktopMainMenu() {
     var menu = document.querySelector('.main-menu.is-desktop');
+    var mobileMenu = document.querySelector('.main-menu.is-mobile');
+    var menuDep = document.querySelector('.main-menu.is-desktop .main-menu-list');
     var links = menu.querySelectorAll('a');
     window.addEventListener('scroll', function() {
       if (this.scrollY < 50) {
         menu.classList.remove('is-fixed');
+        mobileMenu.classList.remove('is-mb-fixed');
       } else {
         menu.classList.add('is-fixed');
+        mobileMenu.classList.add('is-mb-fixed');
       }
     });
-    menu.addEventListener('mouseenter', function() {
+    menuDep.addEventListener('mouseenter', function() {
       menu.classList.add('is-open');
     });
     menu.addEventListener('mouseleave', function() {
@@ -56,6 +68,7 @@
     })
   }
 
+  // Gnb:: mobile toggle
   function mainMenuToggle() {
     var $links = $('.main-menu.is-mobile .main-menu-list').find('.is-sub');
     $links.on('click', function() {
@@ -63,6 +76,7 @@
     });
   }
 
+  // Gnb:: mobile menu
   function mobileMainMenu() {
     var $menu = $('.main-menu.is-mobile');
     var $btn = $menu.find('.main-menu-btn');
@@ -71,10 +85,30 @@
     });
   }
 
+  // Tabs
+  function tabs() {
+    var $btn = $('[data-tab-anchor]');
+    $btn.click('click', function(e){
+      var $wrap = $(this).parents('[data-tab]'),
+          $panel = $wrap.find('[data-tab-panel]');
+      var index = $(this).parent('li').index();
+      $panel.hide();
+      $panel.eq(index).show();
+      $(this)
+        .addClass('is-active')
+        .parent('li')
+        .siblings('li')
+        .find('a')
+        .removeClass('is-active')
+      e.preventDefault()
+    });
+  }
+
   window.addEventListener('DOMContentLoaded', function() {
     desktopMainMenu();
     mobileMainMenu();
     mainMenuToggle();
+    tabs();
   })
 
   // modal
@@ -103,7 +137,6 @@ function layerOpen(obj) {
   if(obj === 'videoModal') {
     // append iframe
     $obj.find('.video').append('<iframe width="100%" src="https://www.youtube.com/embed/9v6oBBsW3gA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-    console.log('video')
   }
 
   // 팝업 정렬

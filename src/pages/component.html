@@ -1,0 +1,167 @@
+{{ include("_head.html", {
+  "title": "서브",
+  "styles": [
+    "/assets/css/sub.css",
+    "/assets/css/breakpoint_sub.css"
+  ]
+}) }}
+
+{{ include("skip-nav.html") }}
+
+<div class="wrapper">
+  
+  {{ include("main-menu.html") }}
+
+  <main id="main" class="container">
+    <!-- keyvisual -->
+    <div class="keyvisual kbg1">
+      <div class="inner">
+        <h2>사랑해요 대한민국 <br> 회사소개</h2>
+        <a href="#" class="btn-black">버튼입니당</a>
+      </div>
+    </div>
+    <!-- //keyvisual -->
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <a href="#">홈</a>
+      <a href="#">BUSINESS</a>
+      <a href="#">NE 엔터테인먼트</a>
+      <a href="#">프로젝트</a>
+    </div>
+    <!-- //breadcrumb -->
+    <!-- board: list -->
+    <div class="board-list">
+      <table>
+        <caption>테이블 목록</caption>
+        <colgroup>
+          <col style="width:104px;">
+          <col />
+          <col style="width:127px;">
+          <col style="width:107px;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="row">번호</th>
+            <th scope="row">제목</th>
+            <th scope="row">작성일</th>
+            <th scope="row">조회</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="subject"><a href="#">제목 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지</a></td>
+            <td>2019.09.04</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="subject"><a href="#">제목 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지</a></td>
+            <td>2019.09.04</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="subject"><a href="#">제목 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지 100자까지 입력가능합니다 제목 100자까지</a></td>
+            <td>2019.09.04</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- //board: list -->
+    <!-- board: list search -->
+    <div class="board-search">
+      <fieldset>
+        <legend>검색</legend>
+        <label for="searchSelect">검색어</label>
+        <select name="" id="searchSelect">
+          <option value="">일주일</option>
+          <option value="">일주일</option>
+        </select>
+        <select name="" id="">
+          <option value="">제목</option>
+          <option value="">기간</option>
+        </select>
+        <div class="input-group">
+          <input type="text" title="검색어 입력">
+          <button type="submit">찾기</button>
+        </div>
+      </fieldset> 
+    </div>
+    <!-- board: list search -->
+    <!-- board: thumb -->
+    <div class="board-thumb">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="thumb"><img src="https://dummyimage.com/220x220/000/fff" alt=""></div>
+            <strong class="subject">행사명 대표 이미지</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //board: thumb -->
+  </main>
+
+  {{ include("footer.html") }}
+
+</div>
+
+{{ include("_foot.html", {
+  "scripts": []
+}) }}

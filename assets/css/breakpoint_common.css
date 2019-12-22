@@ -1,6 +1,17 @@
 @import "abstract/variables.css";
 
 @media (max-width: 768px) {
+  body {
+    font-family:"Helvetica Neue","Apple SD Gothic Neo",sans-serif;
+    letter-spacing:0;
+    word-break: keep-all;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   .is-desktop {
     display: none;
   }
@@ -15,7 +26,9 @@
     right: 0;
     padding: 8px 20px;
     min-width: auto;
-    background: none;
+    &.is-mb-fixed {
+      background:#fff;
+    }
     &::before {
       bottom: auto;
       height: 100%;
@@ -171,35 +184,122 @@
     }
   }
 
-  img {
-    width: 100%;
-    height: auto;
-  }
   .wrapper {
     min-width: 320px;
+    /* padding-top:76px; */
   }
   .header {
-    display: none;
   }
   #main {
-    display: none;
   }
+  /* footer */
   .footer {
     & .inner {
       width: var(--mWidth);
       padding: 0;
     }
     & .footer-contact {
-      padding: 30px var(--mPadding);
+      padding:40px var(--mPadding);
+      text-align:center;
       & h2 {
-        /* font-size:12px; */
+        margin:0 0 13px 0;
+        padding:0;
+        font-size:14px;
+        & a {
+          margin:-6px 0 0 10px;
+          font-size:20px;
+        }
+      }
+      & p {
+        margin:0;
+        font-size:13px;
+        line-height:18px;
       }
       & .btn {
         position: static;
         top: 0;
         right: 0;
-        /* font-size:12px; */
+        display:block;
+        margin:15px 0 0 0;
+        font-size:16px;
       }
+    }
+    & .footer-sitemap {
+      padding: 12px var(--mPadding) 30px var(--mPadding);
+      font-size:13px;
+      justify-content:flex-start;
+      & .sitemap-group {
+        min-width:44%;
+        max-width:44%;
+        margin:18px 0 0 0;
+        line-height:1.6;
+        &:nth-child(even) {
+          min-width:56%;
+          max-width:56%;
+        }
+        & li {
+          margin:2px 0 0 0;
+        }
+      }
+    }
+    & .footer-address {
+      padding:0;
+      font-size:13px;
+      & .inner {
+        width: var(--mWidth);
+        padding: 11px var(--mPadding) 90px var(--mPadding);
+      }
+      & .top {
+        margin:0 0 5px 0;
+        text-align:center;
+        & a {
+          display:inline-block;
+          margin:0 7px 0 0;
+          &:last-child{
+            margin:0;
+          }
+        }
+      }
+      & .bottom {
+        line-height:20px;
+      }
+      & .share {
+        position:relative;
+        right:0;
+        margin:23px 0 0 0;
+        & a {
+          height:auto;
+          margin:0;
+          &.facebook{
+            width:auto;
+            min-width:10px;
+            background-size:10px;
+            padding-right:20px;
+          }
+          &.instagram{
+            width:auto;
+            min-width:19px;
+            background-size:19px;
+            padding-right:30px;
+          }
+          &.blog{
+            width:auto;
+            min-width:20px;
+            background-size:20px;
+            padding-right:30px;
+          }
+          &.kakao{
+            width:auto;
+            min-width:20px;
+            padding-right:20px;
+            background-size:20px;
+            padding-right:30px;
+          }
+        }
+      }
+    }
+    & .footer-map {
+      display:none;
     }
   }
   /* modal */
