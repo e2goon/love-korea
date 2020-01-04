@@ -75,6 +75,36 @@
   }
 }
 
+/* title-group */
+.title-group {
+  position:relative;
+  width: var(--width);
+  margin:0 auto;
+  padding: 0 var(--horizontalPadding);
+  & h3{
+    font-size:40px;
+    font-family: NanumMyeongjo;
+  }
+  & p{
+    margin:0;
+    font-size:18px;
+  }
+  & select{
+    position:absolute;
+    bottom:50%;
+    right:20px;
+    margin-bottom:-15px;
+  }
+  &.is-desc{
+    & select {
+      bottom:0;
+      margin:0;
+    }
+  }
+}
+/* //title-group */
+
+
 /* board: list */
 .board-list{
   width: var(--width);
